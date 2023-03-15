@@ -1,0 +1,227 @@
+
+
+/* ==========================================================================
+   font-family: 'fjalla_oneregular';
+   font-family: 'source_sans_prolight';
+   font-family: 'source_sans_probold';
+   font-family: 'source_sans_proregular';
+   ========================================================================== */
+@font-face {
+    font-family: 'fjalla_oneregular';
+    src: url('../fonts/fjallaone-regular-webfont.eot');
+    src: url('../fonts/fjallaone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fjallaone-regular-webfont.woff') format('woff'),
+         url('../fonts/fjallaone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/fjallaone-regular-webfont.svg#fjalla_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('../fonts/sourcesanspro-bold-webfont.eot');
+    src: url('../fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-bold-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'source_sans_prolight';
+    src: url('../fonts/sourcesanspro-light-webfont.eot');
+    src: url('../fonts/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-light-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-light-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ==========================================================================
+   Global styles starts here
+   ========================================================================== */
+	body{background: url(../img/body-bg.jpg); margin-top: 65px; margin-bottom: 40px;}
+	h1, h2, h3, h4, h5, h6{margin: 0;}
+	h1{}
+	h2{}
+	h3{}
+	h4{}
+	h5{}
+	h6{}
+	p{color: #ffffff; font-size: 14px; line-height: 22px; font-family: 'source_sans_proregular'; 
+	padding-bottom: 15px; }
+	.no-border-right{border-right: none !important;}
+	.icon{color: #8800FF;
+font-size: 10px;
+display: inline-block !important;
+cursor: pointer;
+width: 12px !important;
+height: 12px !important;
+border-radius: 50%;
+text-align: center;
+position: relative;
+z-index: 1;
+border: 1px solid #FFF000;
+padding: 6px;
+background: #8800FF;
+font-size: 15px;
+
+}
+.icon:hover{border: 3px solid #fff; color: #fff; text-decoration: none;}
+.last{padding-bottom: 0;}
+.ruler-top{border-top: 1px solid #8800FF;}
+.no-space{margin-left: 0 !important;}
+.align-right{text-align: right;}
+/* ==========================================================================
+   Menu styles starts here
+   ========================================================================== */
+	.site-header{background: #FFF000; border-radius: 3px 3px 0 0; overflow: hidden; font-family: 'fjalla_oneregular';}
+	.logo{ font-family: 'fjalla_oneregular'; float: left; padding: 20px;}
+	.logo h1{font-size: 30px; line-height: 32px; color: #000000; text-transform: uppercase; font-weight: normal;}
+	.menu{float: right;}
+  .menu .navbar .nav{margin-right: 0;}
+	.menu .navbar .nav > li{border-right: 1px solid #FFF000;}
+	.menu .navbar .nav > .active > a{color: #fff000; background: #8800FF; box-shadow: none;}
+	.menu .navbar .nav > li > a {text-transform: uppercase; color: #584f41; font-size: 12px; line-height: 30px; text-shadow: none; padding: 23px 15px;}
+	.menu .navbar .nav > li > a:hover{color: #fff; background: #8800FF;}
+
+  .mini-menu{display: none;}
+    .mini-menu .selectnav{display: none; width: 100%;background: #8800FF;font-weight: 600;padding: 10px;height: 42px; color: #fff000; border-radius: 100px; cursor: pointer; outline: 0; border:none !important;}
+    .selectnav select{appearance: none; border:none !important;}
+    .mini-menu label {position:relative; width: 100%;}
+    .mini-menu label:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#fff;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:14px; top:86px;
+    padding:0 0 1px;
+
+    position:absolute;
+    pointer-events:none;
+    }
+    .mini-menu label:before {
+    content:'';
+    right:1px; top:80px;
+    width: 25px; height: 25px;
+    background:#8800FF;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+    }
+
+
+
+/* ==========================================================================
+   General styles starts here
+   ========================================================================== */
+    .banner-shadow{background: url(../img/shadow.png) no-repeat center;}
+    .banner{ text-align: center; }
+    .banner .carousel {margin: 0;}
+    .banner .carousel-caption { background: none;}
+    .banner .social-icons{margin-bottom: 5px;}
+    .banner .social-icons ul{margin: 0;}
+    .banner .social-icons ul li{list-style: none; display: inline-block; margin-right: 5px;}
+    .banner .carousel-inner:hover img{-webkit-filter: blur(10px); transition:all 5s; }
+    .banner .carousel-caption .icon{opacity: 0;}
+    .banner .carousel-inner:hover [class^="fw-icon-"]{ transition:all 1s; opacity: 0.9 !important;  }
+
+	.featured-heading{text-align: center; background: #8800FF; padding: 35px 0; text-transform: uppercase; 
+					border-top: 1px solid #fff000; border-bottom: 1px solid #fff000;}
+	.featured-heading h1{color: #fff000; font-size: 30px; line-height: 30px; font-family: 'fjalla_oneregular';
+						 padding-bottom: 70px; font-weight: normal;}
+	.featured-heading h2{color: #ffffff; font-size: px; line-height: 30px; font-family: 'source_sans_prolight';padding-bottom: 70px; }
+	.featured-heading h2 strong{color: #fff; font-family: 'source_sans_probold'; }
+	.featured-heading h2 span{color: #fff000;}
+	.featured-heading .btn{color: #fff000 background: #fff000; border: 3px solid #ffffff; padding: 30px; text-shadow: none;font-family: 'fjalla_oneregular'
+	transition: background-color .3s;
+	transition: broder .3s;
+	}
+a.tombol1.hower{
+  broder: 10px solid coral
+}
+	.featured-heading .btn:hover{ color: #fff; border: 3px solid #fff;}
+
+	.featured-content { padding: 0 30px; padding-top: 100px; padding-bottom: 45px; background: #8800FF; }
+	.featured-content .block h1{color: #fff000; font-size: 30px; line-height: 50px; text-transform: uppercase;
+								 padding-bottom: 8px; font-family: 'fjalla_oneregular'; font-weight: normal;}
+	.featured-content .block p span{color: #fff; text-decoration: underline;}
+	.featured-content .block ul{margin: 0; padding-top: 105px; padding-bottom: 10px;}
+	.featured-content .block ul li{list-style: none; display: inline-block;}
+	.featured-content .block ul li a{color: #fff; text-transform: uppercase; font-family: 'source_sans_proregular';}
+	.featured-content .block ul li a:hover{color: #8800FF; text-decoration: none;}
+	.featured-content .block .btn{color: #fff000; background: #8800FF; border: 4px solid #c2a270; padding: 1px; text-shadow: none;
+							font-family: 'fjalla_oneregular'; text-transform: uppercase;}
+	.featured-content .block .btn:hover{ color: #fff; border: 3px solid #fff;}
+
+	.portfolio-block{background: #8800FF; padding:px 40px;  padding-right: 0; padding-bottom: 10px; 
+                  text-align: center; text-transform: uppercase; border-top: 1px solid #fff000; letter-spacing: 1px;}
+  .portfolio-block h1{font-size: 300px; line-height: 340px; color: #FFF000; text-transform: uppercase; font-family: 'fjalla_oneregular'; 
+                     font-weight: normal; padding-bottom: 15px; }
+  .portfolio-block h2{font-size: 20px; line-height: 30px; color: #FFFFFF; font-family: 'source_sans_prolight'; 
+                      padding-bottom: 15px; font-weight: normal;}
+  .portfolio-block .links a{background: #8800FF; padding: 5px 12px; color: #d2b383; margin-right: 5px;
+                     font-family: 'fjalla_oneregular'; border-radius: 3px;}
+  
+  .portfolio-block .links a:hover{background: #c2a270; color: #8800FF; text-decoration: none;} 
+  .portfolio-block ul{margin-top: 40px; margin-bottom: 0;}                   
+  .portfolio-block ul li{list-style: none; display: inline-block; margin-bottom: 30px; margin-left: 0; margin-right: px;}
+  .contact-info{padding: 1px; text-transform: uppercase; background: #8800FF; border-top: 1px solid #29292;
+               text-align: center; }
+  .contact-info h1{font-size: 30px; line-height: 34px; color: #fff000; text-transform: uppercase; font-family: 'fjalla_oneregular'; 
+                     font-weight: normal; padding-bottom: 15px; letter-spacing: 1px;}
+  .contact-info h2{font-size: 20px; line-height: 30px; color: #ffffff; font-family: 'source_sans_prolight'; padding-bottom: 30px; font-weight: normal;}
+  
+  .contact-info form input[type="text"], input[type="email"], textarea{background: #FFF000; border: 1px solid #fff000; 
+                  color: #ffffff;  margin-bottom: 20px;}
+  .contact-info form input[type="text"]{margin-right: 12px; min-height: 38px; font-family: 'source_sans_proregular';}
+  .contact-info form input[type="email"]{min-height: 13px; font-family: 'source_sans_proregular';} 
+  .contact-info form textarea{margin-bottom: 7px; font-family: 'source_sans_proregular';}                  
+  .contact-info form .btn{background: #ffffff; color: #1b1b1b; font-size: 13px; line-height: 40px; font-family: 'fjalla_oneregular';
+                        padding: 8px; text-shadow: none; text-transform: uppercase; border-bottom: none; } 
+  .contact-info form .btn:hover{background: #ffffff; color: #fff000;}                                         
+/* ==========================================================================
+   Sidebar styles starts here
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   Footer styles starts here
+   ========================================================================== */
+  .site-footer{background: #8800FF; padding-top: 40px; padding-bottom: 30px; border-radius: 0 0 3px 3px;}
+  .site-footer h1{color: #fff000; font-size: 18px; line-height: 30px; font-family: 'fjalla_oneregular'; text-transform: uppercase; font-weight: normal;}
+  .site-footer ul{margin: 0;}
+  .site-footer ul li{list-style: none; font-family: 'source_sans_proregular';}
+  .site-footer ul li a{color: #ffffff; font-size: 14px; line-height: 22px; padding-bottom: 10px;}
+  .site-footer ul li a:hover{color: #fff; text-decoration: none;}
+
+
+/* ==========================================================================
+   Responsive Tweaks starts here
+   ========================================================================== */
+.navbar .btn-navbar {background: #FFFFFF; margin-top: 20px; margin-right: 20px;}
+.navbar .btn-navbar:hover{background: #fff; color: #FFFFFF; text-shadow: none;}
